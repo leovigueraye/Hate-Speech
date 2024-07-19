@@ -10,7 +10,7 @@ from sklearn.tree import DecisionTreeClassifier
 nltk.download('stopwords')
 
 # Load data
-data = pd.read_csv("Data_set.csv")
+data = pd.read_csv("Data_Set.csv")
 data["labels"] = data["class"].map({0: "Hate Speech Detected", 1: "Offensive Language", 2: "No Hate and Offensive"})
 data = data[["tweet", "labels"]]
 
